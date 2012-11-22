@@ -1,0 +1,114 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+	<div metal:fill-slot="content-title"></div>
+	<div metal:fill-slot="content-description"></div>
+    <metal:content-core fill-slot="content-core">
+        <metal:block define-macro="content-core"
+                     tal:define="kssClassesView context/@@kss_field_decorator_view;
+                                 getKssClasses nocall:kssClassesView/getKssClassesInlineEditable; 
+                                 toLocalizedTime nocall:context/@@plone/toLocalizedTime; 
+                                 items view/gallery">
+			<div class="project">
+			
+				<div class="jCarouselLite" tal:condition="items/gallery">
+					<a href="#" class="prev buttons disabled"> prev </a>
+					
+					<ul class="carousel">
+						<li tal:repeat="item items/gallery">
+							<tal:x tal:condition="python:item.portal_type ==  'Image'">
+								<img tal:replace = "structure python:item.tag()" />
+							</tal:x>
+							<tal:x tal:condition="python:item.portal_type ==  'Embed media'">
+								<tal:x tal:replace = "structure python:item.getCode()" />
+							</tal:x>
+							<tal:x tal:condition="python:item.portal_type ==  'File'">
+								<div class="autoFlowPlayer video">
+									<a href="#" tal:attributes="href item/absolute_url"></a>
+								</div>
+							</tal:x>
+							<tal:x tal:condition="python:item.portal_type ==  'Link'">
+								<div class="autoFlowPlayer video">
+									<a href="#" tal:attributes="href item/getRemoteUrl"></a>
+								</div>
+							</tal:x>
+						</li>
+					</ul>
+					<a href="#" class="next buttons"> next </a>
+				
+				</div>
+				<h2 class="project-header">
+					<span class="header" tal:content="context/Title"></span>
+					<span class="carousel-info">
+						<span id="current">1</span>/<span id="total" tal:content="python:len(items['gallery'])">20</span>
+					</span>
+				</h2>
+				<div class="info">
+					<div class="text" tal:content="structure context/getText"></div>
+					<div class="project_date">
+						<span>Datum:</span> 
+						<span tal:content="python:toLocalizedTime(context.getProjectDate(), long_format = False)"></span> 
+					</div>
+					<div class="categories"  tal:condition="context/Subject">
+						<span>Kategorie: </span>
+						<span tal:content="python:', '.join(context.Subject())"></span>
+					</div>
+				
+				</div>
+				<div class="sound-list">
+					
+					<ul>
+					<li tal:repeat = "item items/sound">
+						
+						
+							<tal:x tal:condition="python:item.portal_type ==  'File'">
+							<div class="autoFlowPlayer audio">
+								<a href="#" tal:attributes="href item/absolute_url"></a>
+							</div>
+							</tal:x>
+							<tal:x tal:condition="python:item.portal_type ==  'Link'">
+							<div class="autoFlowPlayer audio">
+								<a href="#" tal:attributes="href item/getRemoteUrl"></a>
+							</div>
+							</tal:x>
+							<tal:x tal:condition="python:item.portal_type ==  'Embed media'">
+								<tal:x tal:replace = "structure python:item.getCode()" />
+							</tal:x>
+							<p tal:content="item/Title"></p>
+					</li>
+					</ul>
+				</div>
+				<div class="projects" tal:define="projects view/projects">
+					<h2>Alles Projekte</h2>
+					<ul>
+						<li tal:repeat ="item projects">
+							<tal:o tal:define="obj item/getObject">
+							<img tal:replace="structure python:obj.tag(scale='mini')" />
+							<h3><a href="#" tal:attributes="href obj/absolute_url" tal:content="obj/Title"></a></h3>	
+							<p tal:content="obj/Description"></p>
+							<div class="project_date">
+								<span>Datum:</span> 
+								<span tal:content="python:toLocalizedTime(obj.getProjectDate(), long_format = False)"></span> 
+							</div>
+							<div class="categories"  tal:condition="obj/Subject">
+								<span>Kategorie: </span>
+								<span tal:content="python:', '.join(obj.Subject())"></span>
+							</div>
+							</tal:o>
+						</li>
+					</ul>
+				
+				</div>
+			</div>
+			
+        </metal:block>
+    </metal:content-core>
+</body>
+
+</html>

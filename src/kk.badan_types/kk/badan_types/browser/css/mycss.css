@@ -1,0 +1,49 @@
+		.jCarouselLite {
+		
+			position:relative;
+		} 
+		.jCarouselLite li {
+			width:960px !important;
+			height:540px !important;
+			background-color:black;
+			text-align: center;
+		}
+		.jCarouselLite .autoFlowPlayer.video {
+			width:960px;
+			height:540px;		
+		}
+		.prev, .next  {
+			position:absolute;
+			z-index:1000;
+			display:none;
+		}
+		.prev {
+			left:0;
+			top:50%;
+		}
+		.next {
+			right:0;
+			top:50%;
+		}
+		.jCarouselLite:hover  .buttons {
+		
+			display:block;
+		}
+		.jCarouselLite:hover  .buttons.disabled{
+			display:none;
+		}
+		.projects li img {
+			float:left;
+		}
+		.projects li p, .projects h3, .projects .project_date, .projects li .categories {
+			margin-left: 220px;
+		}
+		#content .sound-list ul, #content .projects ul  {
+			margin:0;
+			padding:0;
+		}
+		.sound-list ul li, .projects ul li {
+			list-style-type: none;
+			margin:0 0 1em 0;
+			padding:0;
+		}

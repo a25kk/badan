@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="kk.badan_types">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+   <browser:resourceDirectory
+      name="kk.badan_types.js"
+      directory="js"
+      />
+   <browser:resourceDirectory
+      name="kk.badan_types.css"
+      directory="css"
+      />
+    <browser:page
+        for="..interfaces.project.IProject"
+        name="view"
+        class=".project.ProjectView"
+        permission="zope2.View"
+        />
+     <browser:page
+        for="..interfaces.embedmedia.IEmbedmedia"
+        name="view"
+        class=".embed.EmbedView"
+        permission="zope2.View"
+        />
+</configure>
