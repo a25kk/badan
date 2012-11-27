@@ -82,7 +82,7 @@
         
         <before css:content=".portalMessage" css:theme="#content" />
         <replace css:content-children="#viewlet-below-content"
-            css:theme-children="#below-main-content" />
+            css:theme-children="#below-content" />
 
         <!-- Columns -->
         <replace css:content-children="#portal-column-one > *"

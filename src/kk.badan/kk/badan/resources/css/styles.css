@@ -5155,6 +5155,11 @@ body > header #toolbar + #header {
 #content #frontpage-content {
   padding: 0;
 }
+#below-content {
+  border: 0px solid red;
+  width: 960px;
+  margin: 0px auto;
+}
 .projects h2 {
   border-bottom: 1px solid #797979;
   color: #797979;
