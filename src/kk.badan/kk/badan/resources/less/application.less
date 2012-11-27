@@ -155,6 +155,10 @@ body > header {
     margin: -20px 0px 0px 0px;
 }
 
+.carousel-info {
+    float: right;
+}
+
 // Main content area styles
 
 #portal-breadcrumbs {
@@ -213,17 +217,24 @@ body > header {
     }
 }
 
-.projects h2 {
-    border-bottom: 1px solid @appBlack;
+.projects{
+
+    h2 {
+        border-bottom: 1px solid @appBlack;
         color: @appBlack;
         margin-bottom: @baseLineHeight;
         font-weight: normal;
-
+        text-transform: uppercase;
 }
+    h3 {
+        text-transform: uppercase;
+    }
+} 
 .project-header {
         border-bottom: 1px solid @appBlack;
         color: @appBlack;
         margin-bottom: @baseLineHeight;
+        text-transform: uppercase;
 }
 .documentFirstHeading {
         color: @appBlack;
@@ -290,6 +301,9 @@ body > footer {
         width: 960px;
         text-shadow: none;
         border-top: 1px solid @appBlack;
+        .signature {
+                text-transform: uppercase;   
+            }
         .info {
             margin-bottom: @baseLineHeight;
             color: @appBlack;

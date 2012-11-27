@@ -5103,6 +5103,9 @@ body > header #toolbar + #header {
   text-indent: -9999999px;
   margin: -20px 0px 0px 0px;
 }
+.carousel-info {
+  float: right;
+}
 #portal-breadcrumbs {
   padding: 10px 20px;
   padding-left: 0px;
@@ -5157,11 +5160,16 @@ body > header #toolbar + #header {
   color: #797979;
   margin-bottom: 20px;
   font-weight: normal;
+  text-transform: uppercase;
+}
+.projects h3 {
+  text-transform: uppercase;
 }
 .project-header {
   border-bottom: 1px solid #797979;
   color: #797979;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .documentFirstHeading {
   color: #797979;
@@ -5260,6 +5268,9 @@ body > footer #footer {
   width: 960px;
   text-shadow: none;
   border-top: 1px solid #797979;
+}
+body > footer #footer .signature {
+  text-transform: uppercase;
 }
 body > footer #footer .info {
   margin-bottom: 20px;
