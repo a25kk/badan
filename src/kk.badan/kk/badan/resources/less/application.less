@@ -3,7 +3,8 @@
 
 
 body {
-    background:url(../img/bg.gif)  repeat-x 0 0;
+    background: @white;
+    color: @appBlack;
 }
 
 .visualClear {
@@ -19,6 +20,10 @@ a {
     text-shadow: none;
 }
 
+.selected a {
+    font-size: 24px !important;
+}
+
 body > header {
     #header {
         background: transparent;
@@ -30,10 +35,9 @@ body > header {
             }
         #logo {
             display: block;
-            margin: 0px 0px 20px 0px;
+            margin: 0px 0px 0px 0px;
             border: 0px;
             float: right;
-            .size(25px,294px);
             border: 0px solid red;
             color: @appBlack;
             text-transform: uppercase;
@@ -46,26 +50,31 @@ body > header {
             margin-top: @baseLineHeight * 2; 
         }
         .navbar {
+            ul {
+                margin: 0px;
+            }
             
             float: left;
             .navbar-inner {
                 background: transparent;
                 padding: 0px;
-                min-height: 29px;
                 box-shadow: none;
+                margin-left: -10px;
                 .nav {
-                    margin-right: 0px;
+                    
+
                 }
                 #main-nav li {
                     text-align: center;
-                    line-height: 15px;
+                    line-height: 25px;
                     display: inline;
+                    background:url(../img/bullet.gif)  no-repeat right bottom;
                     a {
                         color: @appBlack;
                         font-weight: normal;
                         text-transform: uppercase;
                         font-size: 16px;
-                        padding: 5px 10px 5px 10px;
+                        padding: 5px 12px 5px 10px;
                         text-shadow: none !important;
                     }
                     a:hover {
@@ -95,6 +104,10 @@ body > header {
     }
 }
 
+#portaltab-impressum {
+                        background: none !important;
+                    }
+
 
 
 // Base utility classes
@@ -104,7 +117,6 @@ body > header {
     margin: 0 auto;
     background: @white;
     .border-radius(0px);
-    .box-shadow(0 0 2px 2px rgba(0,0,0,.05));
     &.panel-news {
         padding: @baseLineHeight;
         margin-bottom: 0px;
@@ -127,11 +139,28 @@ body > header {
 }
 
 
+.next {
+    border: 0px solid red;
+    background:url(../img/arrow-right.png)  no-repeat top left;
+    padding: 0px 20px 20px 0px;
+    text-indent: -9999999px;
+    margin: -20px 0px 0px 0px;
+}
+
+.prev {
+    border: 0px solid red;
+    background:url(../img/arrow-left.png)  no-repeat 10px 0px;
+    padding: 0px 0px 20px 20px;
+    text-indent: -9999999px;
+    margin: -20px 0px 0px 0px;
+}
+
 // Main content area styles
 
 #portal-breadcrumbs {
-    background: @grayLighter;
     padding: @baseLineHeight / 2 20px;
+    padding-left: 0px;
+    font-size: @fontSizeMini;
 }
 
 #above-content {
@@ -175,20 +204,29 @@ body > header {
 }
 
 #content {
-    padding: @baseLineHeight;
-    width: 920px;
+    padding: 0;
+    width: 960px;
     background: @white;
     #frontpage-content {
     padding: 0;
 
     }
 }
-.page-header {
-        display: none;
+
+.projects h2 {
+    border-bottom: 1px solid @appBlack;
+        color: @appBlack;
+        margin-bottom: @baseLineHeight;
+        font-weight: normal;
+
+}
+.project-header {
+        border-bottom: 1px solid @appBlack;
+        color: @appBlack;
+        margin-bottom: @baseLineHeight;
 }
 .documentFirstHeading {
-        font-size: @fontSizeLarge;
-        color: @appBlue;
+        color: @appBlack;
     }
 
 a.link-more {
@@ -251,9 +289,9 @@ body > footer {
         padding: 20px 0px 0px 0px;
         width: 960px;
         text-shadow: none;
+        border-top: 1px solid @appBlack;
         .info {
-            margin-top: @baseLineHeight;
-            margin-bottom: 180px;
+            margin-bottom: @baseLineHeight;
             color: @appBlack;
             text-transform: uppercase;
             font-size: @fontSizeMini + 1px;
