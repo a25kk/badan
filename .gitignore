@@ -26,3 +26,4 @@ src/sauna.reload
 src/Products.windowZ
 .DS_Store
 known-good-versions.cfg
+src/vwc.toolbar
