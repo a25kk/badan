@@ -5095,6 +5095,22 @@ body > header #toolbar + #header {
   padding: 0px 20px 20px 0px;
   text-indent: -9999999px;
   margin: -20px 0px 0px 0px;
+  display: inline;
+}
+#below-content .listingBar .next {
+  text-indent: 0px !important;
+  display: block;
+  border: 0px solid red;
+  margin: 0px;
+  background: transparent;
+  position: relative;
+  float: right;
+  padding: 0px;
+}
+#below-content .listingBar .prev {
+  text-indent: 0px !important;
+  display: block;
+  border: 1px solid red;
 }
 .prev {
   border: 0px solid red;
