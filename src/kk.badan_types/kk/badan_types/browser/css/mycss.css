@@ -5,7 +5,7 @@
 		.jCarouselLite li {
 			width:960px !important;
 			height:540px !important;
-			background-color:black;
+			background-color:transparent;
 			text-align: center;
 		}
 		.jCarouselLite .autoFlowPlayer.video {
