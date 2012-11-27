@@ -5121,7 +5121,7 @@ body > header #toolbar + #header {
   border-top-right-radius: 4px;
 }
 #above-content .carousel-pager {
-  margin: -200px 0px 0px 20px;
+  margin: -40px 0px 0px 20px;
   position: absolute;
 }
 #above-content .carousel-pager .carousel-pager-item,
