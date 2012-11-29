@@ -4990,19 +4990,20 @@ body > header #header {
   width: 960px;
   margin-top: 40px;
   border-bottom: 1px solid #797979;
+  margin-bottom: 5px;
 }
 body > header #header a:hover {
   text-decoration: none;
 }
 body > header #header #logo {
   display: block;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
   border: 0px;
   float: right;
   border: 0px solid red;
   color: #797979;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: normal;
 }
 body > header #header #nav-search {
@@ -5023,6 +5024,7 @@ body > header #header .navbar .navbar-inner {
   padding: 0px;
   box-shadow: none;
   margin-left: -10px;
+  min-height: 30px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -5089,28 +5091,25 @@ body > header #toolbar + #header {
   font-size: 10.2px;
   line-height: 16px;
 }
+#below-content .listingBar .next {
+  text-indent: 0px !important;
+  display: block;
+  margin: 0px;
+  position: relative;
+  float: right;
+  padding: 0px 0px 0px 0px;
+}
+#below-content .listingBar .prev {
+  text-indent: 0px !important;
+  display: block;
+  padding: 0px 0px 0px 0px;
+}
 .next {
   border: 0px solid red;
   background: url(../img/arrow-right.png) no-repeat top left;
   padding: 0px 20px 20px 0px;
   text-indent: -9999999px;
   margin: -20px 0px 0px 0px;
-  display: inline;
-}
-#below-content .listingBar .next {
-  text-indent: 0px !important;
-  display: block;
-  border: 0px solid red;
-  margin: 0px;
-  background: transparent;
-  position: relative;
-  float: right;
-  padding: 0px;
-}
-#below-content .listingBar .prev {
-  text-indent: 0px !important;
-  display: block;
-  border: 1px solid red;
 }
 .prev {
   border: 0px solid red;
@@ -5130,14 +5129,10 @@ body > header #toolbar + #header {
 #above-content {
   width: 960px;
   margin: 0px auto 0px auto;
-  border-radius: 4px;
 }
 #above-content .carousel {
   margin-bottom: 0px;
-}
-#above-content .carousel img {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  margin-top: 20px;
 }
 #above-content .carousel-pager {
   margin: -40px 0px 0px 20px;
@@ -5163,6 +5158,9 @@ body > header #toolbar + #header {
   line-height: 20px;
   display: block;
 }
+.jCarouselLite {
+  margin-bottom: 20px;
+}
 #content {
   padding: 0;
   width: 960px;
@@ -5185,6 +5183,9 @@ body > header #toolbar + #header {
 }
 .projects h3 {
   text-transform: uppercase;
+}
+.projects li img {
+  padding-top: 9px;
 }
 .project-header {
   border-bottom: 1px solid #797979;
