@@ -69,8 +69,8 @@
         <replace css:content="#portal-globalnav li" css:theme-children="#main-nav" />
 
         <!-- Breadcrumbs -->
-        <replace css:content-children='#portal-breadcrumbs'
-            css:theme-children='#breadcrumbs' />
+        <!--<replace css:content-children='#portal-breadcrumbs'
+            css:theme-children='#breadcrumbs' />-->
         <before css:theme="#header"
             css:content="#tickerbar" />
             <!-- Copy over the contents of the page body -->

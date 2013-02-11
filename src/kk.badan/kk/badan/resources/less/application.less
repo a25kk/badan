@@ -174,9 +174,7 @@ body > header {
 // Main content area styles
 
 #portal-breadcrumbs {
-    padding: @baseLineHeight / 2 20px;
-    padding-left: 0px;
-    font-size: @fontSizeMini;
+    display: none;
 }
 
 #above-content {
@@ -261,6 +259,7 @@ body > header {
 }
 .documentFirstHeading {
         color: @appBlack;
+        margin-top: 20px;
     }
 
 a.link-more {
@@ -337,4 +336,20 @@ body > footer {
             }
         }
     }
+}
+
+.template-search #search-field,
+.template-search .documentFirstHeading,
+.template-search #rss-subscription,
+.template-search #search-results-bar   {
+    display: none;
+}
+
+.searchResults {
+    padding: 20px;
+}
+
+.contenttype-project {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

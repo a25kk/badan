@@ -93,7 +93,7 @@
 							<h3><a href="#" tal:attributes="href obj/absolute_url" tal:content="obj/Title"></a></h3>	
 							<p tal:content="obj/Description"></p>
 							<div class="project_date">
-								<span>Datum:</span> 
+								<span></span> 
 								<span tal:content="python:toLocalizedTime(obj.getProjectDate(), long_format = False)"></span> 
 							</div>
 							<div class="categories"  tal:condition="obj/Subject">

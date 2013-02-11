@@ -5122,9 +5122,7 @@ body > header #toolbar + #header {
   float: right;
 }
 #portal-breadcrumbs {
-  padding: 10px 20px;
-  padding-left: 0px;
-  font-size: 9.84px;
+  display: none;
 }
 #above-content {
   width: 960px;
@@ -5195,6 +5193,7 @@ body > header #toolbar + #header {
 }
 .documentFirstHeading {
   color: #797979;
+  margin-top: 20px;
 }
 a.link-more {
   font-size: 18px;
@@ -5302,4 +5301,17 @@ body > footer #footer .info {
 }
 body > footer #footer .info a {
   color: #797979;
+}
+.template-search #search-field,
+.template-search .documentFirstHeading,
+.template-search #rss-subscription,
+.template-search #search-results-bar {
+  display: none;
+}
+.searchResults {
+  padding: 20px;
+}
+.contenttype-project {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
