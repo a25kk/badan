@@ -5175,6 +5175,7 @@ body > header #toolbar + #header {
 .projects h2 {
   border-bottom: 1px solid #797979;
   color: #797979;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-weight: normal;
   text-transform: uppercase;
