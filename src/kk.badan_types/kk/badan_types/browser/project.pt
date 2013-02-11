@@ -52,7 +52,7 @@
 				<div class="info">
 					<div class="text" tal:content="structure context/getText"></div>
 					<div class="project_date">
-						<span>Datum:</span> 
+						<span></span> 
 						<span tal:content="python:toLocalizedTime(context.getProjectDate(), long_format = False)"></span> 
 					</div>
 					<div class="categories"  tal:condition="context/Subject">
