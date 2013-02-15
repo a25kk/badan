@@ -37,6 +37,8 @@ ProjectSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         description='',
                         label=_(u'label_project_date', default=u'Project Date')
                         )),
+       atapi.StringField("city", 
+       required = False), 
     	atapi.ImageField('image',
         	required=False,
         	storage=atapi.AnnotationStorage(migrate=True),
@@ -69,6 +71,7 @@ ProjectSchema = folder.ATFolderSchema.copy() + atapi.Schema((
             	label=_(u'label_body_text', u'Body Text'),
             	rows=25,
             	allow_file_upload=zconf.ATDocument.allow_document_upload)),
+
 ))
 
 # Set storage on fields copied from ATFolderSchema, making sure
