@@ -38,7 +38,8 @@ ProjectSchema = folder.ATFolderSchema.copy() + atapi.Schema((
                         label=_(u'label_project_date', default=u'Project Date')
                         )),
        atapi.StringField("city", 
-       required = False), 
+       required = False,
+       widget = atapi.StringWidget(label = "Ort")), 
     	atapi.ImageField('image',
         	required=False,
         	storage=atapi.AnnotationStorage(migrate=True),

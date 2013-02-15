@@ -55,14 +55,13 @@
 						<span></span> 
 						<span tal:content="python:toLocalizedTime(context.getProjectDate(), long_format = False)"></span> 
 					</div>
+					<div class="city"  tal:condition="context/getCity">
+						<span tal:content="context/getCity"></span>
+					</div>	
 					<div class="categories"  tal:condition="context/Subject">
 						<span>Kategorie: </span>
 						<span tal:content="python:', '.join(context.Subject())"></span>
-					</div>
-					<div class="city"  tal:condition="context/getCity">
-						<span>City: </span>
-						<span tal:content="context/getCity"></span>
-					</div>				
+					</div>			
 				</div>
 				<div class="sound-list">
 					
@@ -99,14 +98,14 @@
 								<span></span> 
 								<span tal:content="python:toLocalizedTime(obj.getProjectDate(), long_format = False)"></span> 
 							</div>
+							<div class="city"  tal:condition="obj/getCity">
+								<span tal:content="obj/getCity"></span>
+							</div>
 							<div class="categories"  tal:condition="obj/Subject">
 								<span>Kategorie: </span>
 								<span tal:content="python:', '.join(obj.Subject())"></span>
 							</div>
-							<div class="city"  tal:condition="obj/getCity">
-								<span>City: </span>
-								<span tal:content="obj/getCity"></span>
-							</div>
+
 							</tal:o>
 						</li>
 					</ul>
