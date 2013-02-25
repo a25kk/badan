@@ -87,7 +87,7 @@
 					</ul>
 				</div>
 				<div class="projects" tal:define="projects view/projects">
-					<h2>Alle Projekte</h2>
+					<hr>
 					<ul>
 						<li tal:repeat ="item projects">
 							<tal:o tal:define="obj item/getObject">

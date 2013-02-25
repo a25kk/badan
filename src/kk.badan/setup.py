@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='kk.badan',
       version=version,
-      description="Example Diazo Plone Theme",
+      description="Badan Diazo Plone Theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -17,7 +17,7 @@ setup(name='kk.badan',
       keywords='',
       author='kreativkombinat GbR',
       author_email='info@kreativkombinat.de',
-      url='http://dist.vorwaerts-werbung.de',
+      url='http://dist.kreativkombinat.de',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['kk'],
