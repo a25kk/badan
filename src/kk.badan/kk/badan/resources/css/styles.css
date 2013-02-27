@@ -4979,6 +4979,10 @@ a {
   outline: none !important;
   color: #797979;
 }
+hr {
+  border-top: 1px solid #797979;
+  height: 10px;
+}
 .navbar .nav > li > a {
   text-shadow: none;
 }
@@ -5061,7 +5065,7 @@ body > header #header .navbar .navbar-inner #main-nav li.active a {
 body > header #toolbar + #header {
   margin-top: 40px;
 }
-#portaltab-impressum {
+#portaltab-kontakt {
   background: none !important;
 }
 .panel {
@@ -5098,11 +5102,13 @@ body > header #toolbar + #header {
   position: relative;
   float: right;
   padding: 0px 0px 0px 0px;
+  display: none;
 }
 #below-content .listingBar .prev {
   text-indent: 0px !important;
   display: block;
   padding: 0px 0px 0px 0px;
+  display: none;
 }
 .next {
   border: 0px solid red;
