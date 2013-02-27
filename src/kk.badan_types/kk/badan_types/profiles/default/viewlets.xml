@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object>
+
+ <order manager="plone.belowcontent" skinname="*">
+    <viewlet name="badan.keywords" />
+ </order>
+
+
+</object>

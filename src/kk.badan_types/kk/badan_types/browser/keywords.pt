@@ -1,0 +1,8 @@
+<div class="badan-keywords" tal:condition="python: context.portal_type == 'Project'" 
+	tal:define="keywords python:context.portal_catalog.Indexes['Subject'].uniqueValues()">
+
+ 	<tal:x tal:repeat = "keyword keywords">
+ 		<a tal:attributes="href string: ${context/portal_url}/@@search?Subject%3Alist=${keyword}" tal:content="keyword"></a>
+ 	</tal:x>
+
+</div>

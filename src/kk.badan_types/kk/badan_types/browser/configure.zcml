@@ -26,4 +26,11 @@
         class=".embed.EmbedView"
         permission="zope2.View"
         />
+     <browser:viewlet
+        name="badan.keywords"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+        class=".viewlets.BadanKeywordsViewlet"
+        permission="zope2.View"
+        />
+
 </configure>
