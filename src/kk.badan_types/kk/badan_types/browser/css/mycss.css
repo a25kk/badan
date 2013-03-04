@@ -35,7 +35,7 @@
 		.projects li img {
 			float:left;
 		}
-		.projects li p, .projects h3, .projects .project_date, .projects li .categories {
+		.projects li p, .projects h3, .projects .project_date, .projects li .categories, .city {
 			margin-left: 220px;
 		}
 		#content .sound-list ul, #content .projects ul  {
