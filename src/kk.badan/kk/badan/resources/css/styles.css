@@ -5174,6 +5174,9 @@ body > header #toolbar + #header {
 .jCarouselLite {
   margin-bottom: 20px;
 }
+.section-aktuelles .jCarouselLite {
+  margin-top: 20px;
+}
 #content {
   padding: 0;
   width: 960px;
