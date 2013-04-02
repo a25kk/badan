@@ -5117,20 +5117,20 @@ body > header #toolbar + #header {
   background: url(../img/arrow-right.png) no-repeat center center;
   padding: 0px;
   text-indent: -9999999px;
-  margin: -60px 20px 0px 0px;
-  border: 1px solid #efefef;
-  width: 100px;
-  height: 100px;
+  margin: -260px 0px 0px 0px;
+  border: 0px solid #efefef;
+  width: 50px;
+  height: 520px;
   border-radius: 5px;
 }
 .prev {
   background: url(../img/arrow-left.png) no-repeat center center;
   padding: 0px;
   text-indent: -9999999px;
-  margin: -60px 0px 0px 20px;
-  border: 1px solid #efefef;
-  width: 100px;
-  height: 100px;
+  margin: -260px 0px 0px 0px;
+  border: 0px solid #efefef;
+  width: 50px;
+  height: 520px;
   border-radius: 5px;
 }
 .carousel-info {
