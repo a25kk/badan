@@ -4975,6 +4975,9 @@ body {
 .visualClear {
   clear: both;
 }
+.autoFlowPlayer {
+  background: black !important;
+}
 a {
   outline: none !important;
   color: #797979;
