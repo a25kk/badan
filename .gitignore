@@ -23,7 +23,8 @@ var
 *-ck.js
 etc/**/*
 src/sauna.reload
-src/Products.windowZ
+src/vwc.toolbar
 .DS_Store
 known-good-versions.cfg
-src/vwc.toolbar
+src/ade25.fabfiles/
+src/vwc.typekit/
