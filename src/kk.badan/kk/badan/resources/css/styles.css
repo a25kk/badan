@@ -5066,10 +5066,13 @@ body > header #header .navbar .navbar-inner #main-nav li.active a {
   padding: 9px 0px 0px 0px;
 }
 body > header #toolbar + #header {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 #portaltab-kontakt {
   background: none !important;
+}
+#toolbar {
+  background: #cccccc;
 }
 .panel {
   width: 960px;

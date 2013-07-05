@@ -12,9 +12,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="kk.badan"
+      title="Badan Diazo Plone Theme"
       directory="profiles/default"
-      description="Installs the kk.badan package"
+      description="Installs the Badan Diazo Plone Theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
