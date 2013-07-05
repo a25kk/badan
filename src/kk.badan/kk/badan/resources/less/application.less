@@ -83,9 +83,7 @@ body > header {
                         padding: 5px 12px 5px 10px;
                         text-shadow: none !important;
                     }
-                    a:hover {
-                        background:url(../img/active.gif)  no-repeat center bottom;
-                    }
+                    
                     &.active {
                         background-color: @white;
                         .square(35px);
@@ -105,20 +103,26 @@ body > header {
             padding: 0px;
         }
     }
-    #toolbar + #header {
-        margin-top: @navbarHeight * 2;
-    }
 }
 
 #portaltab-kontakt {
     background: none !important;
 }
 
-#toolbar {
-    background: #cccccc;
+#edit-bar {
+    display: inline-block;
+    padding: @baseLineHeight / 2;
+    width: 100%;
+    background: #999;
+    font-size: @fontSizeSmall + 2;
+    border: 0px;
+    border-radius: 0px;
+    width: 940px !important;
 }
 
-
+#content-views .selected a {
+    font-size: @fontSizeSmall + 2 !important;
+}
 
 // Base utility classes
 
